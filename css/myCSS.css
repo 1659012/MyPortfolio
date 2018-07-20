@@ -1,0 +1,413 @@
+html {
+    font-family: 'Lora', serif;
+}
+
+button, input {
+    border-radius: 0 !important;
+    opacity: 1 !important;
+}
+
+/* Navbar========================== */
+
+.navbar {
+    font-family: 'Nunito', 'Helvetica', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    margin: 0 9%;
+}
+
+.navbar .nav-item>a {
+    font-size: 20px;
+}
+
+.navbar .nav-item>a:hover {
+    background-color: aliceblue;
+    color: black !important;
+    transition: ease 1s;
+}
+
+/* Modal fo logout========================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    border-radius: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+    padding: auto;
+    background-color: #343a40;
+    color: white;
+    border-radius: 0;
+    vertical-align: middle;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.modal-body button {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.modal-body button a {
+    color: white;
+}
+
+.modal-body button a:hover {
+    text-decoration: none;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+    animation-name: animateModalTop;
+    animation-duration: 0.4s
+}
+
+@keyframes animateModalTop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close-button {
+    color: cyan;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.close-button:hover, .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* home-index ============================= */
+
+.text-container {
+    margin-top: 30px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+#myText path {
+    stroke: rgba(255, 255, 255, 0.8);
+    fill: #fff;
+    stroke-dasharray: 5000;
+    opacity: 10;
+    animation: text-animate 5s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+@keyframes text-animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 5000;
+    }
+    30% {
+        opacity: 1;
+        fill: none;
+        stroke-dashoffset: 5000;
+    }
+    90% {
+        fill: rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        opacity: 1;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes bgFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* getCurrentTime */
+
+#now-time {
+    position: absolute;
+    width: 20%;
+    bottom: 20%;
+    right: 11%;
+    text-align: right;
+    color: #fefefe;
+}
+
+/* Main-content ========================== */
+
+.main-body {
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    border: lavender 2px solid;
+    width: 80%;
+    height: auto;
+    margin: 6% auto;
+    /* text-align: center; */
+    vertical-align: middle;
+    background-color: rgba(240, 248, 255, 0.8);
+    position: static;
+    /* padding: 20px; */
+    padding: 10px;
+}
+
+.main-content>.login-info, #view-post {
+    font-size: 2vw;
+    margin: 20px auto;
+    position: static;
+    color: gray;
+    cursor: default;
+    display: inline;
+    line-height: 12vh;
+}
+
+.main-content>.login-info-acc {
+    color: gray;
+    cursor: default;
+}
+
+.main-content>.login-info>a {
+    color: aqua;
+    cursor: pointer;
+}
+
+.main-content>.login-info>a:hover {
+    color: #31708f;
+    text-decoration: none;
+}
+
+/* form container======================== */
+
+.form-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.form-container .personal-img {
+    width: auto;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.form-container .row .col-md-8 {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.form-title {
+    font-size: 24px;
+    color: #31708f;
+}
+
+.error-message {
+    font-size: 12px;
+    color: #d44950;
+}
+
+/* Blog post========================== */
+
+#view-post {
+    cursor: pointer;
+}
+
+#view-post:hover {
+    font-size: 2.1vw;
+    color: #31708f;
+    transition: linear 0.5s;
+    opacity: 0.5;
+}
+
+.article {
+    margin-bottom: 20px;
+    box-shadow: 1.2px 1.2px #E2E2E2;
+    height: 200px;
+}
+
+.extend {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.well {
+    height: inherit;
+    overflow: auto;
+    text-align: left;
+}
+
+#art-content .title {
+    color: #31708f;
+    font-size: 28px;
+}
+
+#art-content .author {
+    color: darkmagenta;
+}
+
+#art-content .date-post {
+    font-size: small;
+    font-weight: normal;
+    color: black;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+nav#pagination {
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+nav#pagination a.fa {
+    font-size: 60px;
+    color: gray;
+}
+
+nav#pagination a.fa:hover {
+    color: cornflowerblue;
+}
+
+/* portfolio-info================== */
+
+.portfolio-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.portfolio-title {
+    text-align: left;
+    color: #31708f;
+}
+
+/* carousel======================== */
+
+#myCarousel img {
+    height: 800px !important;
+    object-fit: cover;
+}
+
+#myCarousel .nav-button {
+    height: 50px;
+    background-color: darkgrey;
+}
+
+div#control-menu {
+    margin-top: 20px;
+}
+
+button.btn {
+    margin-right: 4px;
+}
+
+button#create-post {
+    float: right;
+}
+
+/* gallery =========================*/
+
+#gallery-container .row {
+    margin: 0;
+}
+
+#gallery-container img {
+    width: 100%;
+    height: 300px !important;
+    object-fit: cover !important;
+}
+
+.gallery-info {
+    color: #31708f;
+    margin: 20px;
+}
+
+/* About me ========================= */
+
+canvas#canvas {
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.personal-img {
+    text-align: center;
+}
+
+.personal-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: rgba(255, 255, 255, 0.8) 2px solid;
+}
+
+.personal-info {
+    text-align: left;
+    font-size: 20px;
+}
+
+.personal-info .fa {
+    margin-right: 10px;
+    width: 30px;
+}
+
+fieldset.personal-info {
+    border: lavender 2px solid;
+    padding: 20px;
+}
+
+legend.personal-info {
+    text-align: right;
+    width: inherit;
+    padding: 0 10px;
+    color: #31708f;
+}
+
+/* User-info========================= */
