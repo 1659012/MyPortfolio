@@ -67,7 +67,7 @@ if (isset($_FILES['img-file'])) {
     $allowed_files = ['png', 'jpg', 'gif', 'jpeg'];
 
     $response = array();
-    $response['file-name'] = $file_name;
+    $response['file'] = $file_name;
     $response['caption'] = $caption;
     $response['error'] = '';
     $response['messages'] = '';
