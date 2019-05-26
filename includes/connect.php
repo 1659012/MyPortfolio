@@ -5,10 +5,10 @@
 // $db = "itec2018week8";
 // $conn = new mysqli($host, $user, $pw, $db);
 
-$host = "sql12.freemysqlhosting.net";
-$user = "sql12246939";
-$pw = "wVjgFsmP9N";
-$db = "sql12246939";
+$host = "remotemysql.com";
+$user = "pzmyS9yKiP";
+$pw = "N6id2BhU0L";
+$db = "pzmyS9yKiP";
 $conn = new mysqli($host, $user, $pw, $db);
 
 if ($conn->connect_error) {
