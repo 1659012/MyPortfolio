@@ -20,8 +20,8 @@ $connectionOptions = array(
 );
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
-if ($conn->connect_error) {
-    echo "Connection failed: " . $conn->connect_error;
+if ($conn) {
+    echo "Connected successfully" . "<br>";   
 } else {
-    // echo "Connected successfully" . "<br>";
+    echo "Connection could not be established.<br />";
 }
