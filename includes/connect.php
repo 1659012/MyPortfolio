@@ -21,7 +21,7 @@ $conn = new mysqli($host, $user, $pw, $db);
 if ($conn->connect_error) {
     echo "Connection could not be established.<br />";
 } else {    
-    echo "Connected successfully" . "<br>";   
+    // echo "Connected successfully" . "<br>";   
 }
 
 // Host: sql12.freesqldatabase.com
