@@ -8,7 +8,7 @@
 
         <div class="col-md-8">
             <ul>
-                <li>Create or login with an account (available account: <strong>itecky</strong> pass: <strong>itec</strong> )</li>
+                <li>Create or login with an account (available account: <strong>admin</strong> pass: <strong>123qwe</strong> )</li>
                 <li>Post or view pictures in MyGallery when login</li>
                 <li>Leave a comment for my Portfolio</li>
             </ul>
