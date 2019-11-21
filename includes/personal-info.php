@@ -23,7 +23,7 @@
             <fieldset class="personal-info">
                 <legend class="personal-info">Skills</legend>
                 <p><i class="fa fa-language"></i>Code languages: C++, PHP, Javascript</p>
-                <p><i class="fa fa-heart"></i>Interest in: C++, C#, Full-stack</p>
+                <p><i class="fa fa-heart"></i>Interest in: C++, C#, Javascript, Full-stack</p>
                 <p><i class="fa fa-info-circle"></i>Current learning: Angular 5 at  <a href="https://training.stdio.vn/" target="_blank">stdio</a> training</p>
             </fieldset>
             </form>

@@ -16,8 +16,8 @@ if (isset($_POST['loginRequest'])) {
     if ($results->num_rows === 0) {
         $responseAjax['checkLogin'] = false;
         $responseAjax['info'] = 'User does not exist';
-    } elseif (password_verify($pw, $hash)) {
-    // } elseif ($pw == $hash) {
+    // } elseif (password_verify($pw, $hash)) {
+    } elseif ($pw == $hash) {
         $_SESSION['login'] = true;
         $_SESSION['user'] = $uid;
         $responseAjax['checkLogin'] = true;

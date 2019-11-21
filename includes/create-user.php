@@ -18,8 +18,8 @@ if (isset($_POST['create_user'])) {
         $responseAjax['checkCreate'] = false;
         $responseAjax['info'] = "That user name is already taken!";
     } else {
-        $hash = password_hash($pw1, PASSWORD_DEFAULT);
-        // $hash=$pw1;
+        // $hash = password_hash($pw1, PASSWORD_DEFAULT);
+        $hash=$pw1;
         $stmt = $conn->prepare("INSERT INTO user VALUES (?,?,?,?,?,?)");
         $stmt->bind_param("ssssss", $uid, $name, $email, $hash, $level, $date);
         $stmt->execute();
