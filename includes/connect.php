@@ -13,9 +13,9 @@
 
 
 $host = "sql12.freesqldatabase.com";
-$user = "sql12313010";
-$pw = "rtScm7iDFz";
-$db = "sql12313010";
+$user = "sql12346812";
+$pw = "itq2pSUMtl";
+$db = "sql12346812";
 $conn = new mysqli($host, $user, $pw, $db);
 
 if ($conn->connect_error) {
