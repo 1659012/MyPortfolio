@@ -8,7 +8,7 @@
     <!-- login -->
     <div class="col-md-8">
         <h3 class="form-title">Login to your account</h3>
-        <p>Available account: <strong>admin</strong> admin pass: <strong>123qwe</strong></p>
+        <p>Available account: <strong>admin</strong> pass: <strong>123qwe</strong></p>
         <form class="form" id="login-form" action="login.php" method="post">
 
             <div class="form-group">
